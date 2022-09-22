@@ -3,7 +3,7 @@ handler.before = function (m) {
     let user = global.db.data.users[m.sender]
     if (user.afk > -1) {
         this.sendButton(m.chat, `
-Kamu berhenti AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
+Kamu kembali dari AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
 Selama ${this.clockString(new Date - user.afk)}
 `.trim(), wm, 'Siap', 'p', fake, { contextInfo: { externalAdReply :{ showAdAttribution: true,
 }}})
