@@ -9,7 +9,7 @@ externalAdReply :{
     mediaUrl: data.sc,
     mediaType: 2,
     sourceUrl: data.sc,
-    title:'Welcome to 'Botshin,
+    title:'Welcome to Botshin ',
     body: wm,
     thumbnail: await(await fetch(img)).buffer(),
 }}})
