@@ -1,7 +1,7 @@
 const moment = require('moment-timezone')
 let handler = m => m
 handler.all = async function (m) {
-	let pp = 'https://telegra.ph/file/5ecadedfb003151914629.jpg'
+	let pp = 'https://telegra.ph/file/6a983060bad096a3d9f4e.jpg'
 	try {
 		pp = await this.profilePictureUrl(m.sender, 'image')
 	} catch (e) {
@@ -12,7 +12,7 @@ handler.all = async function (m) {
         const u = await conn.clockString(_uptime)
         global.run = '𝐀𝐤𝐭𝐢𝐟 𝐒𝐞𝐥𝐚𝐦𝐚' + ' ' + u
         global.ucapan = ucapan()
-        global.col = 'https://telegra.ph/file/5ecadedfb003151914629.jpg'
+        global.col = 'https://telegra.ph/file/6a983060bad096a3d9f4e.jpg'
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 		global.users = db.data.users[m.sender]
 		global.chats = db.data.chats[m.chat]
@@ -37,7 +37,7 @@ handler.all = async function (m) {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
-	 { remoteJid: "6282331033919-1625305606@g.us" } : {}) 
+	 { remoteJid: "628981574999-1625305606@g.us" } : {}) 
                 },
 	 message: { 
 		"audioMessage": {
@@ -52,7 +52,7 @@ handler.all = async function (m) {
 	 key: { 
           fromMe: false,
 	      participant: `0@s.whatsapp.net`, ...(m.chat ? 
-	 { remoteJid: "6282331033919-1625305606@g.us" } : {}) 
+	 { remoteJid: "628981574999-1625305606@g.us" } : {}) 
                 },
 	 message: { 
 		"extendedTextMessage": {
@@ -68,13 +68,13 @@ handler.all = async function (m) {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"by : Arull","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"by : Mos","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
 	}
         
             const ftoko = {
 key: {
 			fromMe: false,
-			participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282331033919@s.whatsapp.net" } : {})
+			participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "628981574999@s.whatsapp.net" } : {})
 		},
 		message: {
 			"productMessage": {
@@ -84,8 +84,8 @@ key: {
 						"jpegThumbnail": fs.readFileSync('./src/logo.jpg') //Gambarnye
 					},
 					"title": wm, //Kasih namalu 
-					"description": data.namabot, 
-					"currencyCode": "USD",
+					"description": data.BotShin, 
+					"currencyCode": "IDR",
 					"priceAmount1000": "2000000000000000",
 					"retailerId": "Ghost",
 					"productImageCount": 1
@@ -151,18 +151,18 @@ module.exports = handler
 
 function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
-    let res = "Selamat malam 🌚"
+    let res = "Selamat Malam 🌚"
     if (time >= 4) {
-        res = "Selamat pagi 🌅"
+        res = "Selamat Pagi 🌅"
     }
     if (time > 10) {
-        res = "Selamat siang 🌞"
+        res = "Selamat Siang 🌞"
     }
     if (time >= 15) {
-        res = "Selamat sore 🌅"
+        res = "Selamat Sore 🌅"
     }
     if (time >= 18) {
-        res = "Selamat malam 🌚"
+        res = "Selamat Malam 🌚"
     }
     return res
 }
