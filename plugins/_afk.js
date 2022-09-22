@@ -19,9 +19,9 @@ Selama ${this.clockString(new Date - user.afk)}
         let reason = user.afkReason || ''
         this.sendButton(m.chat, `
 Jangan tag dia!
-Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
+Dia lagi AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
 Selama ${this.clockString(new Date - afkTime)}
-`.trim(), wm, 'Okee', 'p', fake, { contextInfo :{ externalAdReply :{ showAdAttribution: true,
+`.trim(), wm, 'Baiklah', 'p', fake, { contextInfo :{ externalAdReply :{ showAdAttribution: true,
 }}})
     }
     return true
