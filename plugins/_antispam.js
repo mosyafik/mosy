@@ -25,7 +25,7 @@ handler.all = async function (m) {
     mediaUrl: data.sc,
     mediaType: 2,
     description: data.deslink , 
-    title: 'Jangan Spam Anyingg🙄',
+    title: 'JANGAN SPAM COK 🖕😠',
     body: wm,
     thumbnail: await(await fetch(img)).buffer(),
     sourceUrl: data.sc
