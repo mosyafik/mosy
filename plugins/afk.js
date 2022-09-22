@@ -3,7 +3,7 @@ let handler = async(m, { conn, usedPrefix, text }) => {
     user.afk = + new Date
     user.afkReason = text
     conn.sendButton(m.chat, `
-${conn.getName(m.sender)} sekarang AFK${text ? ': ' + text : ''}
+${conn.getName(m.sender)} Mulai AFK${text ? ': ' + text : ''}
 `, wm, 'Okee', 'p', fake, { contextInfo: { externalAdReply :{ showAdAttribution: true,
 }}})
 }
