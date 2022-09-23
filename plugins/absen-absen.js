@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
 
     let absen = conn.absen[id][1]
     const wasVote = absen.includes(m.sender)
-    if (wasVote) throw 'udah absen!'
+    if (wasVote) throw 'lo udah absen coy!'
     absen.push(m.sender)
     let d = new Date
     let date = d.toLocaleDateString('id', {
@@ -21,8 +21,8 @@ let handler = async (m, { conn }) => {
 ${date}
 ${conn.absen[id][2]}
 
-┌「 absen 」
-├ total: ${absen.length}
+┌「 *ABSEN* 」
+├ Total: ${absen.length}
 ${list}
 └────`.trim()
     await conn.send2Button(m.chat, caption, wm, 'hadir', `.absen`, 'cek', `.cekabsen`, m, { mentions: [m.sender] })
