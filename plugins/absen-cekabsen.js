@@ -18,11 +18,11 @@ let handler = async (m, { conn }) => {
 ${date}
 ${conn.absen[id][2]}
 
-┌「 absen 」
-├ total: ${absen.length}
+┌「 *ABSEN* 」
+├ Total: ${absen.length}
 ${list}
 └────`.trim()
-    await conn.send2ButtonLoc(m.chat, fla + 'absen', caption, wm, 'hadir', `.absen`, 'hapus sesi', `.hapusabsen`)
+    await conn.send2ButtonLoc(m.chat, fla + 'Absen', caption, wm, 'hadir', `.absen`, 'Hapus Sesi', `.hapusabsen`)
 }
 handler.help = ['cekabsen']
 handler.tags = ['absen']
