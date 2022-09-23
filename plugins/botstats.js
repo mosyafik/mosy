@@ -17,7 +17,7 @@ let handler = async (m, { conn }) => {
       noteMessage: {
       extendedTextMessage: {
       text: `
-      ┌─〔 Status 〕
+      ┌─〔 STATUS 〕
       ├ Aktif selama ${uptime}
       ├ *${groups.length}* Grup
       ├ *${chats.length - groups.length}* Chat Pribadi
@@ -26,7 +26,7 @@ let handler = async (m, { conn }) => {
       ├ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
       ├ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
       └────
-      ┌─〔 Pengaturan 〕
+      ┌─〔 PENGATURAN 〕
       ├ ${anon ? '✅' : '❌'} *Anon Chat*
       ├ ${anticall ? '✅' : '❌'} *Anti Call*
       ├ ${backup ? '✅' : '❌'} *Auto Backup DB*
