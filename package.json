@@ -1,6 +1,6 @@
 {
-    "name": "BOT-MD",
-    "version": "3.5.1",
+    "name": "BotShin",
+    "version": "3.5.2",
     "description": "Simple Bot WhatsApp with Baileys Multi Device",
     "depecrated": false,
     "main": "index.js",
@@ -28,16 +28,16 @@
         "stikerin",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/sadteams/bot-md",
+    "homepage": "https://github.com/mosyafik/mosy",
     "author": {
-        "name": "Kangsad01"
+        "name": "Mos"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sadteams/bot-md.git"
+        "url": "git+https://github.com/mosyafik/mosy.git"
     },
     "bugs": {
-        "url": "https://github.com/sadteams/bot-md/issues"
+        "url": "https://github.com/mosyafik/mosy/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
